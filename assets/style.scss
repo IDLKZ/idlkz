@@ -557,88 +557,7 @@ body{
 //end of Our Work
 
 //Team
-.Team{
-  @include bg("/img/spaceBg6.png");
 
-  .slide2{
-    margin-bottom: 40px;
-    height: auto;
-    padding: 40px;
-    .colFirst{
-      min-height: 250px;
-      background-color: #111111;
-      height: auto;
-      border-radius: 20px;
-
-      a{
-        color: white;
-      }
-      a.active{
-        color: black;
-      }
-    }
-  }
-  .slide3{
-    padding-bottom: 0;
-  }
-  .containerTeam{
-    .typicalRowContent{
-      height: auto;
-      .cards{
-        min-height: 500px;
-      }
-      .teammates{
-        padding: 50px;
-        text-align: center;
-        @include small{
-          padding: 10px;
-        };
-        .teamcard{
-          height: auto;
-          text-align: center;
-          .circle{
-            display: inline-block;
-            height: 400px;
-            width: 400px;
-            border-radius: 50%;
-            background-color: white;
-            @include small{
-              height: 250px;
-              width: 250px;
-            }
-          }
-        }
-
-
-      }
-      .hooperTeam{
-        height: auto;
-        outline: none;
-        background-color: #050510;
-        .slideTeam{
-          .rowTeam{
-            text-align: center;
-            height: auto;
-            padding: 100px 50px 100px 50px;
-            min-height: 400px;
-            .circle{
-              width: 100px;
-              height: 100px;
-              border-radius: 50%;
-              display: inline-block;
-              background-color: white;
-              margin-bottom: 10px;
-
-            }
-            p{
-              font-size: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 //end Team
 
 //Advantage
@@ -772,6 +691,7 @@ body{
 
         @include small{
           margin-top: 20px;
+          text-align: center;
         }
         h5{
           margin-bottom: 20px;

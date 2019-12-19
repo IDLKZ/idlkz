@@ -19,7 +19,7 @@
             </b-row>
             <b-row class="typicalRowContent">
                 <b-col class="first" md="6" sm="12" data-aos="fade-right">
-<!--                    <iframe class="video" src="https://www.youtube.com/embed/Jmv5pTyz&#45;&#45;I?autoplay=1&loop=1&autopause=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                    <iframe class="video" src="https://www.youtube.com/embed/Jmv5pTyz--I?autoplay=1&loop=1&autopause=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </b-col>
                 <b-col class="second" md="6" sm="12" data-aos="fade-left">

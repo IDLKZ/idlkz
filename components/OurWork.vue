@@ -35,11 +35,6 @@
 
 <script>
     import NoSSR from 'vue-no-ssr'
-    import vueLottie from 'vue-lottie-ssr/src/components/vue-lottie.vue'
-    import success from '../static/anim/success.json'
-    import smile from '../static/anim/smile.json'
-    import service from '../static/anim/service.json'
-    import gears from '../static/anim/gears.json'
     export default {
         name: "OurWork",
         components:{'no-ssr': NoSSR,vueLottie

@@ -48,12 +48,10 @@
 <script>
     import NoSSR from 'vue-no-ssr'
     import {Hooper,Slide,Pagination as HooperPagination} from "hooper"
-    import 'hooper/dist/hooper.css';
-    import FlipCountdown from 'vue2-flip-countdown'
     export default {
         name: "Carousel",
         components: {
-            'no-ssr': NoSSR,Hooper,Slide,HooperPagination,FlipCountdown
+            'no-ssr': NoSSR,Hooper,Slide,HooperPagination
         },
         data:()=>({
 

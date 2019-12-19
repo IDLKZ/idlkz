@@ -12,7 +12,7 @@
                     <div class="contacts">
                         <div>
                             <!-- По умолчанию -->
-                            <iframe src='http://idl.kz/public/bot/' data-inwidget scrolling='no' frameborder='no' style='border:none;width:260px;height:330px;overflow:hidden;'></iframe>
+                            <iframe src='http://nuxt.idl.kz/public/idl/' data-inwidget scrolling='no' frameborder='no' style='border:none;width:260px;height:330px;overflow:hidden;'></iframe>
                         </div>
                     </div>
 
@@ -43,14 +43,9 @@
 <script>
     import { required,email } from 'vuelidate/lib/validators';
     import {TheMask} from 'vue-the-mask'
-    import axios from "../.nuxt/axios";
-    const headers  = {
-        "Accept": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "X-Requested-With": "XMLHttpRequest",
-        "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
-    }
+    import axios from "axios"
+
+
     export default {
         name: "Contact",
         components: {
@@ -79,10 +74,7 @@
             phone:{
                 required
             },
-            // email:{
-            //     required,
-            //     email,
-            // },
+
             messages:{
                 required
             }
@@ -94,15 +86,9 @@
                     this.$swal( 'Успешно!',
                         'Ваше письмо отправлено!',
                         'success');
-                    // this.$axios.$post("http://nuxt.idl.kz/api/message",
-                    //     [{
-                    //         name: this.name,
-                    //         phone: this.phone,
-                    //         message: this.messages
-                    //     }], headers)
-                    // .then(res => {
-                    //     console.log('ok')
-                    // })
+                   axios.post("http://nuxt.idl.kz/api/message",[{name:this.name,phone:this.phone,message:this.messages}]).then(res => {
+                       console.log(res.data);
+                   })
                 }
                 else {
                     this.$swal( 'Ошибка!',

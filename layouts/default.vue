@@ -12,6 +12,7 @@
 <script>
   import NavBar from '../components/NavBar'
   import FooterBar from '../components/FooterBar'
+  import 'hooper/dist/hooper.css';
   export default {
     components:{
       NavBar,FooterBar
@@ -25,6 +26,6 @@ body{
   background-color: #050510;
   font-family: 'Ledger', serif;
 }
-  @import "../assets/style.scss";
+
 </style>
 

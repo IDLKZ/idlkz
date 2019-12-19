@@ -5,7 +5,7 @@ export default {
     ** Headers of the page
     */
     head: {
-        title: 'IDL Second Life',
+        title: 'IDL - Создание, разработка, техническая поддержка сайтов по всему Казахстану',
         meta: [
             {charset: 'utf-8'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -15,15 +15,15 @@ export default {
             },
             {
                 name: 'keywords',
-                content: "создание сайта, создать сайт в Казахстане, создать сайт в Шымкенте, создать сайт быстро и качественно, оптимизация сайта"
+                content: "создание сайта, создать сайт в Казахстане, создать сайт в Шымкенте,создать сайт в Алмате,создать сайт в Астане,создать сайт в Караганде, создать сайт быстро и качественно, оптимизация сайта,создать интернет магазин,SEO оптимизация"
             },
             {
                 name: 'description',
-                content: "IDL-команда профессионалов которая разрабатывает сайты любой сложности,нужен сайт? Только IDL -создаст сайт быстро и качественно по гибкой цене!"
+                content: "Создание сайтов по всему Казахстану - Легко!. IDL занимается созданием сайтов, технической поддержкой сайтов, оптимизацией сайтов, сайты любой сложности по гибкой цене, работаем по всему Казахстану в том числе в Шымкенте,Нурсултане, Алмате, Караганде, Туркестане и других городах."
             },
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/img/logo1.png'},
+            {rel: 'icon', type: 'image/x-icon', href: '/img/logo.ico'},
             {
                 rel: 'stylesheet',
                 href: "https://fonts.googleapis.com/css?family=Alice|Ledger|Philosopher|Spectral&display=swap"
@@ -40,7 +40,8 @@ export default {
     ** Global CSS
     */
     css: [
-        // "@assets/style.scss"
+         "@assets/style.scss",
+
     ],
     /*
     ** Plugins to load before mounting the App
@@ -67,7 +68,6 @@ export default {
         'bootstrap-vue/nuxt',
         ['vue-sweetalert2/nuxt'],
         '@nuxtjs/axios',
-        '@nuxtjs/proxy',
         ['nuxt-fontawesome', {
             component: 'fa',
             imports: [
@@ -77,7 +77,6 @@ export default {
                 }
             ]
         }],
-        ['@nuxtjs/component-cache', {maxAge: 1000 * 60 * 60}],
 
     ],
 
